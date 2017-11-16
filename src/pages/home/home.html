@@ -7,8 +7,18 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
+  <button ion-button color="light" (click)="Save()">Save</button>
+  <button ion-button color="light" (click)="Get()">Get</button>
+  <button ion-button color="light" (click)="GetToken()">Get Token</button>
+  <button ion-button color="light" (click)="ChangeStatus()">Change Status</button>
+  <button ion-button color="light" (click)="Clear()">Clear</button>
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+   {{data}}
+  </p>
+  <p>
+  {{token}}
+  </p>
+  <p>
+ {{status}}
   </p>
 </ion-content>
